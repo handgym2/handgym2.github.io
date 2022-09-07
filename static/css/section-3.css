@@ -1,0 +1,253 @@
+.section:nth-child(3) {
+	background-color: #2d2e35;
+}
+
+
+.foldertab-container{
+    position: relative;
+    width: 95%;
+    height: 95%;
+    left: 0px;
+    top: 3.5%;
+    margin-left: 0;
+}
+
+.foldertab{
+    border-bottom-right-radius: 15px;
+}
+.foldertab::before{
+    font-family: 'D2Coding';
+    letter-spacing: 7px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    width: 3%;
+    height: 30%;
+    border-radius: 0 15px 15px 0;
+    position: absolute;
+    left: 99.95%;
+    top: 0;
+    cursor: pointer;
+}
+.foldertab:hover:not(:last-child){
+    transition-duration: 150ms;
+    transform: scale(1.05,1.0);
+    will-change: transform;
+}
+
+
+
+
+.foldertab:nth-child(1){
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    background-color: #976f03;
+}
+.foldertab:nth-child(1)::before{
+    content: 'FILE 1';
+    background-color: #976f03;
+    
+}
+
+.foldertab:nth-child(2){
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color: #b18203;
+}
+.foldertab:nth-child(2)::before{
+    content: 'FILE 2';
+    background-color: #b18203;
+}
+.foldertab:nth-child(3){
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    background-color: #ca9404;
+}
+.foldertab:nth-child(3)::before{
+    content: 'FILE 3';
+    background-color: #ca9404;
+}
+.foldertab:nth-child(4){
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: #e3a704;
+}
+.foldertab:nth-child(4)::before{
+    content: 'FILE 4';
+    background-color: #e3a704;
+}
+.foldertab:nth-child(5){
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    background-color: #fdba05;
+}
+.foldertab:nth-child(5)::before{
+    content: 'FILE 5';
+    background-color: #fdba05;
+}
+
+@keyframes animation-folder {
+    25%{
+        z-index: 2;
+    }
+    100%{
+        z-index: 2;
+        width: 75%;
+        height: 100%;
+        background-color: #fdba05;
+    }
+}
+
+.animation-folder1, .animation-folder2, 
+.animation-folder3, .animation-folder4{
+    animation: animation-folder 0.6s ease-in forwards;
+}
+.animation-folder1::before, .animation-folder2::before, 
+.animation-folder3::before, .animation-folder4::before{
+    animation: change-color 0.6s ease-in forwards;
+}
+
+@keyframes change-color{
+    100%{background-color: #fdba05;}
+}
+.folder-file{
+    width: 96.5%;
+    height: 95%;
+    margin-top: 20px;
+    background-color: hsl(0, 0%, 85%);
+    box-shadow:0px 0px 15px rgb(0 0 0 / 70%);
+    position: absolute;
+}
+
+.file-content{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    left: 70%;
+    background-color: white;
+    border-left: 5px solid #fdba05;
+}
+
+.file-img{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+}
+
+.file-title{
+    position: relative;
+    font-family: 'BMDOHYEON';
+    font-size: 27px;
+    top: 45px;
+    /* width: 95%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-context{
+    position:relative;
+    font-size: 20px;
+    font-family: 'BMDOHYEON';
+    top: 65px;
+    width: 94%;
+    left: 5%;
+}
+
+.file-hashtag{
+    position:relative;
+    font-size: 25px;
+    /* font-family: 'BMDOHYEON'; */
+    font-family: "Calibri, sans-serif";
+    width: 90%;
+    left: 5%;
+    font-style: oblique;
+    font-weight: 700;
+    text-decoration: solid underline black 1px;
+    text-underline-offset:2.2px;
+    top: 450px;
+}
+
+
+.file-tags{
+	margin:0;
+	padding:0;
+	position:relative;
+	/* top: 0px; */
+	list-style:none;
+	}
+
+.file-tags li, .file-tags div{
+    float:left;
+    height:30px;
+    line-height:32px;
+    position:relative;
+    font-size:19px;
+    text-align: end;
+    font-family: 'BMDOHYEON';
+    text-align: end;
+    margin-bottom: 20px;
+}
+
+
+.file-tags div{
+    margin-left: 13px;
+    padding: 4px 11px 3px 25px;
+    background: #fdba05;
+    text-decoration: none;
+    border-radius: 45px;
+	} 
+
+
+.file-tags div:before{
+	content:"";
+	float:left;
+	position:absolute;
+	top:0;
+	left:-12px;
+	width:0;
+	height:0;
+	}
+
+
+.file-tags div:after{
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 9px;
+    float: left;
+    width: 5px;
+    height: 5px;
+	border-radius:2px;
+	background:#fff;
+	box-shadow:-1px -1px 2px #976f03;
+	}
+
+.download-pdf{
+    position: relative;
+    top: 210px;
+    width: 94%;
+}
+.download-pdf a{
+    position: absolute;
+    font-size: 23px;
+    font-family: 'BMDOHYEON';
+    left: 5%;
+    width: 94%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
+    background-color: #fdba05;
+    text-decoration: none;
+    color: black;
+}
