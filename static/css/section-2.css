@@ -1,3 +1,5 @@
+/* @media screen and (min-width: 992px) { */
+	@media screen and (min-width: 771px) {
 .section:nth-child(2) {
 	background-color:rgb(24 25 32 / 34%);
 }
@@ -1578,3 +1580,17 @@
 		transform: translateX(-50%) rotate(360deg);
 	}
 }
+	}
+
+
+ /* Mobile */
+ .section-2-h2{
+	display: none;
+}
+.centerbar-1{
+	display: none;
+}
+.mobile-progress-bar{
+	display: none;
+}
+/* Mobile */
