@@ -16,6 +16,17 @@
 	color:#fdba05;
 	margin-bottom:10px;
 }
+/* Mobile */
+.section-2-h2{
+	display: none;
+}
+.centerbar-1{
+	display: none;
+}
+.mobile-progress-bar{
+	display: none;
+}
+/* Mobile */
 .skill-menu-item,.skill-menu-open-button {
 	background:#EEEEEE;
 	border-radius:100%;
