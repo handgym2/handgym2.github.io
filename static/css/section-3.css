@@ -3,7 +3,9 @@
 .section:nth-child(3) {
 	background-color: #2d2e35;
 }
-
+.slider{
+    display: none;
+}
 
 .foldertab-container{
     position: relative;
