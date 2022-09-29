@@ -1,3 +1,5 @@
+
+
 .section:nth-child(3) {
 	background-color:rgb(24 25 32 / 34%);
     margin-bottom: -25%;
@@ -121,7 +123,7 @@
     content: "80%";
     text-align: end;
     position: relative;
-    left: 38%;
+    left: 46%;
 }
 .progress-skill2{
     width: 65%; 
@@ -138,7 +140,7 @@
     content: "75%";
     text-align: end;
     position: relative;
-    left: 48%;
+    left: 5%;
 }
 .progress-skill3{
     width: 65%; 
@@ -155,7 +157,7 @@
     content: "75%";
     text-align: end;
     position: relative;
-    left: 55%;
+    left: 61%;
 }
 .progress-skill4{
     width: 65%; 
@@ -172,7 +174,7 @@
     content: "75%";
     text-align: end;
     position: relative;
-    left: 48%;
+    left: 55%;
 }
 .progress-skill5{
     width: 62%; 
@@ -189,7 +191,7 @@
     content: "70%";
     text-align: end;
     position: relative;
-    left: 29%;
+    left: 39%;
 }
 
 
@@ -204,7 +206,7 @@
         width: 1%;
     }
     100%{
-        width: 72%;
+        width: 80%;
     }
 }
 .risebar-skill2{
@@ -217,7 +219,7 @@
         width: 1%;
     }
     100%{
-        width: 65%;
+        width: 75%;
     }
 }
 .risebar-skill3{
@@ -230,6 +232,6 @@
         width: 1%;
     }
     100%{
-        width: 62%;
+        width: 70%;
     }
 }
