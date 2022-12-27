@@ -509,7 +509,7 @@
 	overflow:hidden;
 }
 .languages-flask:hover:before {
-	content:"55%";
+	content:"30%";
 	display:flex;
 	justify-content:center;
 	position:absolute;
@@ -519,7 +519,7 @@
 	left:50%;
 	animation:fill 0.4s ease-in-out forwards;
 	z-index:-2;
-	top:45%;
+	top:70%;
 }
 .languages-elk {
 	background-image:url("../img/elk.png");
